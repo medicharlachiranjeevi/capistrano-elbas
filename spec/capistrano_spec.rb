@@ -9,7 +9,7 @@ describe '#autoscale' do
       with: Hash[body: /Action=DescribeAutoScalingGroups/]
   end
 
-  context 'one server'  do
+  context 'one server' do
     before do
       webmock :post, %r{ec2.(.*).amazonaws.com\/\z} => 'DescribeInstances.200.xml',
       with: Hash[body: /Action=DescribeInstances/]

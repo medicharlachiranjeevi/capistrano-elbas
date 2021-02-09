@@ -16,7 +16,7 @@ groups. During your Capistrano deployment, ELBAS will:
 
 Add to Gemfile, then `bundle`:
 
-`gem 'elbas'`
+`  gem 'elbas', git: "https://github.com/medicharlachiranjeevi/capistrano-elbas.git"`
 
 Add to Capfile:
 
